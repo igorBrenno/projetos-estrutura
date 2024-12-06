@@ -12,7 +12,7 @@
         const char = expressao[i];
 
         if (char === '(' || char === '[' || char === '{') {
-            pilha.push(char); // Adiciona à pilha
+            pilha.push(char);
         }
         else if (char === ')' || char === ']' || char === '}') {
             if (pilha.length === 0 || mapa[pilha.pop()] !== char) {
